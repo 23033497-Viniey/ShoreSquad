@@ -1,17 +1,9 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-    initializeMap();
     initializeWeather();
     loadEvents();
     updateImpactStats();
 });
-
-// Map initialization
-async function initializeMap() {
-    const mapContainer = document.getElementById('cleanup-map');
-    // TODO: Implement map integration using a mapping service like Leaflet or Google Maps
-    mapContainer.innerHTML = '<div class="placeholder">Map Loading...</div>';
-}
 
 // Weather data fetching and display
 async function initializeWeather() {
