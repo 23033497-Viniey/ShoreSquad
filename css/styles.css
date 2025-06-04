@@ -101,9 +101,40 @@ body {
 
 .map-container {
     height: 400px;
-    background-color: #e9ecef;
     border-radius: 10px;
+    overflow: hidden;
     margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-info {
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.next-cleanup-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.next-cleanup-info h3 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.next-cleanup-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+}
+
+.next-cleanup-info i {
+    color: var(--accent);
 }
 
 /* Weather Section */
